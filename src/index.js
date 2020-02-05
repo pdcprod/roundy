@@ -297,6 +297,7 @@ class Roundy extends Component {
                 strokeDashoffset="0"
                 strokeWidth={strokeWidth}
                 stroke={bgColor}
+                strokeLinecap="round"
                 mask={sliced ? `url(#${maskName})` : null}
                 style={styleRotation}
                 d={this.getArc(Math.min(arcSize, 359.9999), 0)}
@@ -305,6 +306,7 @@ class Roundy extends Component {
                 fill="none"
                 strokeWidth={strokeWidth}
                 stroke={color}
+                strokeLinecap="round"
                 mask={sliced ? `url(#${maskName})` : null}
                 style={styleRotation}
                 d={this.getArc(Math.min(angle, 359.9999), 0)}
